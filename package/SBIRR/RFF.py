@@ -9,7 +9,7 @@ from torch.distributions.gamma import Gamma
 from torch.distributions.multivariate_normal import MultivariateNormal
 from pyro.contrib.gp.kernels import Exponential, RBF, Kernel
 
-from GPopdy.arccos import ArcCos
+from SBIRR.arccos import ArcCos
 
 _SUPPORTED_KERNELS = (Exponential, RBF, ArcCos)
 
