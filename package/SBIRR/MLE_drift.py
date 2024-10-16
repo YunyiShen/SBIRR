@@ -10,13 +10,13 @@ import numpy as np
 
 from tqdm import tqdm
 
-from GPopdy.SDE_solver import solve_sde_RK
-from GPopdy.GP import MultitaskGPModel, MultitaskGPModelSparse
-from GPopdy.NN import Feedforward, train_nn
-from GPopdy.RFF import RandomFourierFeatures
-from GPopdy.utils import (auxiliary_plot_routine_init, 
+from SBIRR.SDE_solver import solve_sde_RK
+from SBIRR.GP import MultitaskGPModel, MultitaskGPModelSparse
+from SBIRR.NN import Feedforward, train_nn
+from SBIRR.RFF import RandomFourierFeatures
+from SBIRR.utils import (auxiliary_plot_routine_init, 
                                auxiliary_plot_routine_end)
-from GPopdy.unet import get_trained_unet
+from SBIRR.unet import get_trained_unet
 
 
 def fit_drift_gp(Xts, N, dt, num_data_points=10, num_time_points=50, 

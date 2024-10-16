@@ -5,7 +5,7 @@ from GPy.plotting.matplot_dep.visualize import matplotlib_show
 import pods
 from celluloid import Camera
 from IPython.display import HTML
-from GPopdy.SDE_solver import solve_sde_RK
+from SBIRR.SDE_solver import solve_sde_RK
 
 
 def plot_trajectories_2(Xts, t, remove_time=True, fig_axs=None, color='b', 
