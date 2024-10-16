@@ -14,7 +14,6 @@ from SBIRR.NN import Feedforward, train_nn
 from SBIRR.RFF import RandomFourierFeatures
 from SBIRR.utils import (auxiliary_plot_routine_init, 
                                auxiliary_plot_routine_end)
-from SBIRR.unet import get_trained_unet
 import memory_profiler
 
 import line_profiler
