@@ -8,8 +8,8 @@ There are two main folders in this repo, `Notebook` and `package`. In the `packa
 ## Environment
 To run our code we suggest the following procedure. 
 
-1) Create a virtual environment with Python version Python 3.8.16 by running the command ---- 
-2) Install all dependencies needed from 'requirements.txt', by running `pip install -r requirements.txt`
+1) Create a virtual environment with Python version Python 3.8.16, e.g., in conda `conda create -n "sbirr" python=3.8.16 ipython` and activate `conda activate sbirr` 
+2) Install all dependencies needed from `requirements.txt`, by running `pip install -r requirements.txt`
 3) Install our package SBIRR by running `pip install ./package` 
 
 Then, to reproduce our experiment, run notebooks in `Notebooks`
