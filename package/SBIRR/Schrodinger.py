@@ -396,10 +396,10 @@ class SchrodingerTrain:
             # learn forward
             for interval in range(self.N_snapshots-1):
                 # simulate from backward
-                _,Xts = self.IPFP.sde_solver(b_drift=backward_drift[interval], 
+                _,Xts = self.IPFP[interval].sde_solver(b_drift=backward_drift[interval], 
                             sigma=self.volatility, X0=self.marginals[interval+1], t0 = self.dts[interval+1],
-                            dt=self.IPFP.dt, N=np.ceil(durations[interval]/self.IPFP.dt).astype(int), 
-                            device=self.IPFP.device)
+                            dt=self.IPFP[interval].dt, N=np.ceil(durations[interval]/self.IPFP[interval].dt).astype(int), 
+                            device=self.IPFP[interval].device)
                 # Reverse the series
                 Xts[:, :, :-1] = Xts[:, :, :-1].flip(1)
         
